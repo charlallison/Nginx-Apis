@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+
+  servicea:
+    image: charlallison/servicea:1.0
+    container_name: servicea
+    restart: always
+    build:
+      context: ApiA/
+    ports:
+      - 3000:80
+      
+  serviceb:
+    image: charlallison/serviceb:1.0
+    container_name: serviceb
+    restart: always
+    build:
+      context: ApiB/
+    ports:
+      - 6000:80
+
+  reverseproxy:
+    image: nginx:latest
+    container_name: reverseproxy
+    restart: always
+    build:
+      context: nginx/
+    ports:
+      - 80:80
+    depends_on:
+      - servicea
+      - serviceb

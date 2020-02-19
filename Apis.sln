@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiA", "ApiA\ApiA.csproj", "{3990F8ED-F47C-4A2A-B777-D51524B616D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiB", "ApiB\ApiB.csproj", "{48D9BD0F-CCD1-4ACE-930B-5606EA450D36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3990F8ED-F47C-4A2A-B777-D51524B616D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3990F8ED-F47C-4A2A-B777-D51524B616D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3990F8ED-F47C-4A2A-B777-D51524B616D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3990F8ED-F47C-4A2A-B777-D51524B616D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D9BD0F-CCD1-4ACE-930B-5606EA450D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D9BD0F-CCD1-4ACE-930B-5606EA450D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D9BD0F-CCD1-4ACE-930B-5606EA450D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D9BD0F-CCD1-4ACE-930B-5606EA450D36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
