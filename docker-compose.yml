@@ -9,7 +9,7 @@ services:
     build:
       context: ApiA/
     ports:
-      - 3000:80
+      - '3000:5003'
       
   serviceb:
     image: charlallison/serviceb:1.0
@@ -18,7 +18,7 @@ services:
     build:
       context: ApiB/
     ports:
-      - 6000:80
+      - 5000:80
 
   reverseproxy:
     image: nginx:latest
@@ -27,7 +27,7 @@ services:
     build:
       context: nginx/
     ports:
-      - 80:80
+      - 1337:80
     depends_on:
       - servicea
       - serviceb
