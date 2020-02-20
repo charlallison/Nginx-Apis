@@ -24,6 +24,7 @@ namespace ApiA.Controllers
         }
 
         [HttpGet]
+        [Route("/a/weatherforecast")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
